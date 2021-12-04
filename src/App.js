@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react';
 
-import './App.scss';
 import { Button, Quote } from "./Components";
+
+import './App.scss';
 
 function App() {
   const [disablePreviousButton, setDisablePreviousButton] = useState(true);
@@ -36,7 +37,7 @@ function App() {
 
   return (
     <div className="App">
-      <Quote author={currentQuote?.author} quote={currentQuote?.quote}></Quote>
+      <Quote author={currentQuote?.author} quote={currentQuote?.quote} />
       <div className="btn__container">
         <Button previous label="Previous" handleClick={getPreviousQuote} handleDisable={disablePreviousButton} />
         <Button next label="New" handleClick={getNewQuote} />
