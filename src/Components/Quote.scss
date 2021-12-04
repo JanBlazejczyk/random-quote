@@ -1,10 +1,24 @@
-.Quote__container {
+@import '../utils';
+
+.Quote {
+    padding: 1rem;
     border: solid;
+    border-color: $border-color;
     width: 50vw;
-    height: 10vh;
     border-radius: 0.5em;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
     margin: 1rem;
+    color: $text-color;
+
+    &__text--author {
+        margin-top: 1rem;
+        font-family: 'Corinthia', cursive;
+        font-size: 1.8rem;
+    }
+
+    &__text--quote {
+        font-size: 1.1rem;
+        font-family: 'Nunito', sans-serif;
+    }
 }

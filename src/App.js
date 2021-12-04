@@ -38,8 +38,8 @@ function App() {
     <div className="App">
       <Quote author={currentQuote?.author} quote={currentQuote?.quote}></Quote>
       <div className="btn__container">
-        <Button label="Previous" handleClick={getPreviousQuote} handleDisable={disablePreviousButton} />
-        <Button label="New" handleClick={getNewQuote} />
+        <Button previous label="Previous" handleClick={getPreviousQuote} handleDisable={disablePreviousButton} />
+        <Button next label="New" handleClick={getNewQuote} />
       </div>
     </div>
   );
